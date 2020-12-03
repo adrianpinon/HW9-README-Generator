@@ -15,7 +15,7 @@ const questions = [
         type: "list",
         message: "What license do you want include in your application?",
         name: "license",
-        choices: ["MIT", "GPU"]
+        choices: ["MIT", "ISC", "Apache", "Unlicense"]
     }
 ];
 
