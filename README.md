@@ -6,9 +6,9 @@ With Node.js the user compeletes a series of questions and then generates a READ
 
 ## DEMO 
 GIF of the README functonality <br />
-![Demo of Application using Node.js](assets/.gif)
+![Demo of Application using Node.js](/assets/.gif.gif)
 
 ## Video Link for the README
 Video of the README functionality <br />
-![Demo of Application using Node.js](assets/.mp4) 
+![Demo of Application using Node.js](/assets/.mp4.mp4) 
 ##
