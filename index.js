@@ -8,17 +8,23 @@ const generateMarkdown = require("./utils/generateMarkdown")
 const questions = [
     {
         type: "input",
-        message: "Provide a description of your application",
+        message: "What is the title of your Application?",
+        name: "Title",
+    },
+    {
+        type: "input",
+        message: "Please provide a description of your application",
         name: "Description",
     },
     {
-        type: "input",
-        message: "Enter the table of contents",
+        type: "checkbox",
+        message: "Please select your table of contents",
         name: "Table Of Content",
+        choices: ["Installation", "Usage", "License", "Contribution", "Test", "Questions"] 
     },
     {
         type: "input",
-        message: "Please provide instructions on how to install you application",
+        message: "Please provide instructions on how to install your application",
         name: "Installation",
     },
     {
@@ -34,23 +40,23 @@ const questions = [
     {
         type: "input",
         message: "Please provide test instructions",
-        name: "Test Instructions",
+        name: "Test",
     },
     {
         type: "checkbox",
         message: "What license do you want include in your application?",
-        name: "license",
+        name: "License",
         choices: ["MIT", "ISC", "Apache", "Unlicense"]
-    }
+    },
     {
-        type: "input",
+        type: "name",
         message: "Please provide your GitHub Username",
         name: "GitHub",
     },
     {
         type: "input",
         message: "Please provide your email address",
-        name: "",
+        name: "Email",
     },
 ];
 
@@ -63,9 +69,9 @@ function writeToFile(fileName, data) {
 
 // function to initialize program
 function init() {
-    inquirer.prompt(questions).then(function(answers) {
-        console.log(answers)
-    })
+    inquirer.prompt(questions).then((answers) => {
+            console.log(answers);
+        })
 }
 
 // function call to initialize program
